@@ -1,0 +1,5 @@
+E:\git\JqExe\JqExe\bin\JqExe.dll
+E:\git\JqExe\JqExe\bin\JqExe.pdb
+E:\git\JqExe\JqExe\obj\Debug\ResolveAssemblyReference.cache
+E:\git\JqExe\JqExe\obj\Debug\JqExe.dll
+E:\git\JqExe\JqExe\obj\Debug\JqExe.pdb
