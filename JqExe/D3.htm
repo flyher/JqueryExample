@@ -10,9 +10,13 @@
             var div = body.append("div");
             div.html("Hello");
             */
+            /*
             var section = d3.selectAll("div");//选中一组元素
             var div = section.append("div");
-            div.html("Hello");
+            div.html("Hello");*/
+            d3.select("body")
+                .style("color", "black")//大部分D3的方法返回D3对象的实例，这意味合作可以采用链式写法
+                .style("background-color", "skyblue");
         });
     </script>
 </head>
