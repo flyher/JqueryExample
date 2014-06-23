@@ -6,17 +6,33 @@
     <script src="js/jquery.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            /*1.操作网页元素*/
             /*var section = d3.select("body");//选中某一元素进行操作
             var div = body.append("div");
             div.html("Hello");
             */
+
             /*
             var section = d3.selectAll("div");//选中一组元素
             var div = section.append("div");
             div.html("Hello");*/
+
+            /*
             d3.select("body")
-                .style("color", "black")//大部分D3的方法返回D3对象的实例，这意味合作可以采用链式写法
-                .style("background-color", "skyblue");
+            .style("color", "black")//大部分D3的方法返回D3对象的实例，这意味合作可以采用链式写法
+            .style("background-color", "skyblue");
+            */
+            /*
+            d3.selectAll("div")
+            .attr("class", "special")
+            .append("div")//???返回一个新对象
+            .html("Hello,World");
+            */
+            /*2.生成svg元素*/
+            //D3作图需要svg元素，可以使用js代码动态生成
+            var v = d3.select("#graph")
+                        .append("svg");
+            v.attr("width", 900).attr("height",400);
         });
     </script>
 </head>
@@ -24,5 +40,6 @@
     <div id="div1"></div>
     <div id="div2"></div>
     <div id="div3"></div>
+    <div id="graph"></div>
 </body>
 </html>
